@@ -5,8 +5,8 @@ body {
 }
 .top_nav_gradient{
     margin: auto;
-    max-width: border-box;
-    max-height: border-box;
+    max-width: 50%;
+    max-height: 25%;
     position: relative;
 }
 
