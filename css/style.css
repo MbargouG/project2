@@ -9,7 +9,7 @@ body {
 .top_nav_gradient{
     margin: auto;
     max-width: 100%;
-    height: auto;
+    max-height: 10%;
     position: relative;
 }
 
