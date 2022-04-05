@@ -1,6 +1,6 @@
 @font-face {
     font-family: "American Typewriter";
-
+}
 
 *{
     box-sizing: border-box;
@@ -35,4 +35,9 @@ body {
 
 .middle_links ul li {
     margin: 0 3rem;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
 }
