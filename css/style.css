@@ -100,8 +100,7 @@ main{
     align-items: center;
   }
   .image-holder img{
-    width: 100%;
-    width: auto;
+      width: auto;
   }
 }
 
