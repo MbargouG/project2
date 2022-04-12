@@ -1,3 +1,4 @@
+/* CSS Reset Meyer Reset*/
 /* stylelint-disable */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
@@ -38,9 +39,28 @@ header{
   width: 100%;
 }
 header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+
+header nav ul li{
+  margin-bottom: 5px;
+  color: #77f;
+  width: max-content;
+}
+
+header nav ul li:nth-child(1){
+  float: left;
+}
+
+header nav ul li:nth-child(2){
+  float: right;
+}
+
+header nav ul li:nth-child(3){
+  float: right;
 }
 
 h1, h2, h3, h4, h5{
@@ -68,7 +88,7 @@ h4{
 }
 
 li{
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 p ~ p{
@@ -80,11 +100,11 @@ nav{
 }
 
 section{
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
-article{
-  padding: 0 5px;
+section section{
+  padding: 0 10px;
 }
 
 main{
@@ -92,15 +112,21 @@ main{
 }
 
 @media screen and (min-width: 700px){
-  .image-holder{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
+  section{
+    height: max-content;
+    display: inline-block;
+  }
+  section h1, section p{
+    float: left;
   }
   .image-holder img{
-      width: auto;
+    width: auto;
+  }
+  .image-holder img:nth-child(2n){
+    float: left;
+  }
+  .image-holder img:nth-child(2n+1){
+    float: right;
   }
 }
 
@@ -125,7 +151,4 @@ img{
 iframe {
   width: 100%;
   padding: 10px 0;
-}
-.link_color {
-    color: ghostwhite;
 }
