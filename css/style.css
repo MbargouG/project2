@@ -20,6 +20,15 @@ section a {
 section p {
     float: none!important;
 }
+section h2 {
+    background-color: #218a7f;;
+    color: #fdcaac;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
 /* House styles below */
 @font-face {
     font-family: "American Typewriter";
