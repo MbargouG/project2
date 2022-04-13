@@ -56,17 +56,14 @@ header nav ul{
     margin: 0 auto;
     width: max-content;
 }
-
 header nav ul li{
   margin-bottom: 5px;
   color: #77f;
   width: max-content;
 }
-
 header nav ul li:nth-child(1){
   float: left;
 }
-
 header nav ul li:nth-child(2){
   float: right;
 }
